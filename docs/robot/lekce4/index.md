@@ -1,6 +1,10 @@
 # Lekce 4 - cykly
 
 V této lekci si představíme cykly, což je nástroj který nám umožňuje opakovat kód podle nějakého pravidla.
+Zatím je využijeme pro komunikaci s robotem, v následující lekci si ukážeme jejich použití při řízení robota.
+
+(Nejsem si jistý jak moc tady tu lekci chceme. Přijde mi to méně zajímavé než jezdit s želvičkou, ale když jsem se to snažil dát do jedné lekce, přišla mi moc dlouhá.)
+
 Máme primárně dva typy cyklů:
 
 - `#!ts for` pro případ kdy víme kolikrát se cyklus má opakovat
@@ -19,9 +23,12 @@ Do kulatých závorek píšeme tři věci:
 - výraz který určuje počet opakování
 - nakonec jednoduchou operaci která se provede při každém průchodu cyklem jako poslední operace
 
-Tedy zakládáme proměnnou `#!ts i` s výchozí hodnotou `#!ts 0`, následně definujeme výraz `#!ts i < 3 ` a na konci cyklu zvýšíme `#!ts i ` o jedna.
+Tedy vytváříme proměnnou `#!ts i` s výchozí hodnotou `#!ts 0`, která bude existovat po dobu toho, co se vykonává cyklus.
+Ačkoliv v běžném životě počítáme věci od `1`, v informatice častěji začínáme `0`. Může zde však být cokoliv.
+
+Následně definujeme výraz `#!ts i < 3 `, který značí, kdy se cyklus má zastavit. Na konci cyklu zvýšíme `#!ts i ` o jedna.
 Při prvním průchodu bude tedy `#!ts i = 0` při druhém `#!ts i = 1 ` a při třetím `#!ts i = 2 ` při dalším zvyšování by platilo `#!ts i = 3 ` tam ale už nebude pravdivý výraz ` i < 3 ` a cyklus se tedy ukončí.
-Do složených závorek píšeme vykonávaný kód.
+Do složených závorek píšeme vykonávaný kód, který se v tomto případě vykoná 3-krát.
 
 Kostru na tento úkol najdete [zde](./project4.zip).
 
@@ -35,7 +42,7 @@ Kod napište tak aby bylo jednoduché ho upravit na výpis jakéhokoli jiného i
 
     const BTN_PIN = 18;
 
-	gpio.pinMode(BTN_PIN, gpio.PinMode.INPUT_PULLUP); // nastaví pin nula jako vstup
+	gpio.pinMode(BTN_PIN, gpio.PinMode.INPUT); // nastaví pin 18 jako vstup
 
 	gpio.on("falling", BTN_PIN, () => { // událost, která proběhne při stisknutí tlačítka připojeného na pin 0
 		console.log("Stisknuto, začínáme počítat");
@@ -47,7 +54,7 @@ Kod napište tak aby bylo jednoduché ho upravit na výpis jakéhokoli jiného i
     ```
 
 ## Cyklus while
-Pokud nevíme kolikrát se má cyklus opakovat použijeme místo cyklu `#!ts for ` cyklus `#!ts while `.
+Pokud nevíme, kolikrát se má cyklus opakovat, použijeme místo cyklu `#!ts for ` cyklus `#!ts while `.
 
 Do kulatých závorek teď píšeme jen výraz který určuje jestli se cyklus vykoná znovu nebo ne.
 Kód, který se má vykonávat, dokud platí podmínka, vypadá takto:
@@ -56,40 +63,8 @@ while (condition - podmínka) {
 	// náš kód
 }
 ```
-<!-- V podobných případech se nám bude často hodit funkce `#!ts await sleep(t)`, která zařídí že kód posečká zadaný čas (zadaný čas je v ms neboli v tisícinách sekundy). -->
 
 
-<!-- Napište kód který bude blikat ledkou pokud je stisknuté tlačítko.
-## Zadání C
-...
-
-??? note "Řešení"
-	```ts
-	import { SmartLed, LED_WS2812 } from "smartled";
-	import * as colors from "./libs/colors.js"
-	import * as gpio from "gpio";
-
-	const LED_PIN = 48;
-	const LED_COUNT = 1;
-    const BTN_PIN = 18;
-
-	const ledStrip = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin 48, s 1 ledkou a typem WS2812
-
-	gpio.pinMode(BTN_PIN, gpio.PinMode.INPUT_PULLUP); // nastaví pin nula jako vstup
-
-	gpio.on("falling", 0, async () => { // event, který proběhne při stisknutí tlačítka připojeného na pin 0
-		while (gpio.read(BTN_PIN) == 0) { // dokud je tlačítko stisknuté
-			ledStrip.set(0, colors.red);
-			ledStrip.show();
-			await sleep(500); // nastavíme červenou barvu a počkáme půl sekundy
-
-			ledStrip.set(0, colors.off);
-			ledStrip.show();
-			await sleep(500); // vypneme LED a počkáme půl sekundy
-		}
-	});
-	```
--->
 
 ## Zadání B
 Nyní napište kód který do konzole vypíše čtverec složený z hvězdiček (znaku `*`),

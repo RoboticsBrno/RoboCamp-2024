@@ -1,8 +1,12 @@
 # Lekce 2 - RGB LED + tlačítko + události
 
-V této lekci si ukážeme ovládání RGB LED umístěné na ESP32 a práci s událostmi řízenými tlačítkem nebo časem.
+V této lekci si napíšeme své první programy. 
 
-Jelikož je TypeScript (JavaScript) imperativní, vykonávájí se příkazy v takovém pořadí, v jakém jsou zapsány.
+Ukážeme si ovládání RGB LED umístěné na ESP32 a práci s událostmi řízenými tlačítkem nebo časem.
+
+TypeScript (JavaScript) je imperativní programovací jazyk. Znamená to, že se vykoná vše co do programu napíšeme,
+v takovém pořadí jak jsme to zapsali. Programy mají řadu věcí co v nich umíme zapsat, nám zatím budou stačit
+nejzákladnější příkazy: i velice jednoduchý program už může mít viditelný výsledek.
 
 [Stáhnout ZIP s prázdným projektem](./blank_project.zip){ .md-button .md-button--primary }
 
@@ -82,7 +86,9 @@ Pomocí událostí rozsvítíme při stisknutí tlačítka (GPIO 0) RGB LED na E
 
 ## Zadání C
 
-Dvakrát za sekundu vypíšeme stav zmáčknutí tlačítka (0 nebo 1). Opakování dosáhneme pomocí `setInterval()`. Stav daného tlačítka získáme pomocí `#!ts gpio.read(číslo pinu)`.
+Dvakrát za sekundu vypíšeme stav zmáčknutí tlačítka (0 nebo 1). Stav daného tlačítka získáme pomocí `#!ts gpio.read(číslo pinu)`.
+
+Vzpomeňme si z prvního programu, že opakování dosáhneme pomocí `setInterval()`, a informaci vypíšeme pomocí `#!ts console.log()`.
 
 ??? note "Řešení"
     ```ts
@@ -97,10 +103,10 @@ Dvakrát za sekundu vypíšeme stav zmáčknutí tlačítka (0 nebo 1). Opaková
     }, 500); // čas opakování se udává v milisekundách (500 ms je 0,5 sekundy)
     ```
 
-## Zadání výstupního úkolu V1
+## Výstupní úkol V1 - Pozdrav
 
 Při stisknutí tlačítka (GPIO 0) vypíšeme pozdrav.
 
-## Zadání výstupního úkolu V2
+## Výstupní úkol V2 - Změna barvy
 
 Při stisknutí tlačítka (GPIO 0) rozsvítíme RGB LED na ESP32 (`GPIO 48`) jednou barvou a při puštění barvu změníme na jinou.

@@ -4,11 +4,14 @@ V této lekci si představíme Jaculus, nainstalujeme si programovací prostřed
 
 ## Instalace
 
-Pro práci s Jaculem je nutné nainstalovat několik programů.
+Na našich robotech běží program, který se jmenuje Jaculus.
+Tento program nám umožní jednoduše psát instrukce (programy), které nahrajeme do robota.
+Tyto programy budou specifikovat, jak se robot má chovat, a umožní nám s ním komunikovat.
+Aby nám všechno správně fungovalo, musíme nejprve nainstalovat několik programů.
 
 ### Node.js
 
-Node.js je program, který nám umožní nahrávat kód do Jacula a komunikovat s ním.
+`node.js` je knihovna, která nám umožní stáhnout nástroje na používání Jacula.
 
 1. Stáhneme si [Node.js](https://nodejs.org/en/download) (nejnovější stabilní verzi - LTS)
 2. Nainstalujeme jej dle výchozího nastavení (není potřeba nic měnit).
@@ -22,10 +25,10 @@ Visual Studio Code je programovací prostředí, které nám umožní psát kód
 
 ### Jaculus
 
-Jaculus je program, který nám umožní nahrávat kód do Jacula a komunikovat s ním.
+Nyní už se můžeme vrhnout na samotnou instalaci [`Jacula`](https://jaculus.org/getting-started/).
 
-1. Po instalaci Nodu **restartujeme** aplikaci Visual Studio Code.
-2. V horním menu VSCode vyberte záložku `Terminal` a zvolíme `New Terminal`.
+1. Po instalaci `node` **restartujeme** aplikaci Visual Studio Code.
+2. V horním menu VSCode vybereme záložku `Terminal` a zvolíme `New Terminal`.
 3. Do terminálu zadáme příkaz vypsaný níže. Na `Linuxu` bude nejspíše potřeba `sudo` práva.
 
 	```bash

@@ -1,7 +1,7 @@
 # Lekce 3 - proměnné a podmínky
 
 V imperativním programování si držíme stav pomocí **proměnných**. Proměnné jsou pojmenované hodnoty,
-které mají nějakou hodnotu, můžeme je měnit, a opakovaně používat v různých částech kódu.
+které můžeme měnit, a opakovaně používat v různých částech kódu.
 
 Proměnná má svůj typ, který určuje, jaké hodnoty může proměnná mít. Proměnnou vytvoříme pomocí
 klíčového slova `let`.
@@ -122,7 +122,7 @@ Pomocí jedné proměnné se stavem a podmínky každou sekundu buď rozsvítím
 
 ## Zadání B
 
-Pomocí funkce `colors.rainbow` budeme procházet duhu. Jde o funkci, která dostane číslo od 0 do 360,
+Pomocí funkce `colors.rainbow` budeme procházet duhu. Jde o funkci (o těch si povíme trochu více později), která dostane číslo od 0 do 360,
 a na základě toho vrátí barvu na barevném spektru. V daném intervalu (např. 100 ms) budeme postupně zvyšovat číslo a nastavovat barvu LEDky na `colors.rainbow(cislo)`. Pokud naše číslo přesáhne hodnotu `360`, musíme ho
 opět nastavit na `0`.
 
@@ -185,9 +185,9 @@ Pokud při stisku tlačítka svítí poslední LED, zhasneme ji, a rozsvítíme 
     });
     ```
 
-## Výstupní úkol V1
+## Výstupní úkol V1 - Knightrider
 
-Knightrider: svítící LED "běhá" s danou rychlostí od začátku do konce pásky.
+Svítící LED "běhá" s danou rychlostí od začátku do konce pásky.
 Jakmile dorazí na konec, změní směr, a posouvá se opačným směrem.
 
 V našem případě bude stačit, když se bude pohybovat pouze jedna LEDka.
