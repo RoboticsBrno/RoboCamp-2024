@@ -87,15 +87,19 @@ Vraťme se k předchozímu příkladu. Abychom věděli, že želvička skutečn
 
 Napište kód, který způsobí, že želvička nakreslí místo čtverce trojúhelník. Rozměry trojúhelníku jsou na vás, jen musí skutečně jít o trojúhelník.
 
-!!! tip "Trojúhelníková nerovnost (nechť `a`, `b`, `c` jsou délky stran)""
+!!! tip "Jak na Trojúhelníky (nechť `a`, `b`, `c` jsou délky stran)""
+    Trojúhelníková nerovnost, která musí platit pro všechny:
     ```math
     a + b > c
     a + c > b
     b + c > a
     ```
-
-    Na zjištění úhlu, o který je potřeba se otočit, můžeme použít kosínovu větu (Dodat jako knihovní funkci, tak jako barvičky).
     
+    Nejjednodušší trojúhelník je rovnostranný, který bude mít všechny strany stejně dlouhé a 60° úhel na každém rohu.
+    
+    Hned po něm následuje rovnoramenný, který v nejjednodušším případě bude mít 90° úhel mezi kratšími stranami, a 45° mezi krátkou a dlouhou.
+    
+    Pokud chceme nějaký méně pravidelný trojúhelník, můžeme na výpočet úhlu a délek použít kosínovu větu (Dodat jako knihovní funkci, tak jako barvičky(?)).
 
 ## Výstupní úkol V2 - Domeček
 
@@ -103,3 +107,9 @@ Propojte dosavadní znalosti do jednoho kódu.
 Napište program, který způsobí že si želvička nakreslí domeček z čtverce a trojúhelníkové střechy.
 
 Následně želvička přestane kreslit, a vjede doprostřed domečku, kde zastaví. 
+
+### Dobrovolný úkol - Spuštění na vlastním robotovi
+
+Jakmile máte funkční program v simulátoru, zkuste si ho nahrát do skutečného robota.
+Funguje vám? Pozorujete nějaké rozdíly v jeho chování oproti zjednodušenému prostředí?
+
