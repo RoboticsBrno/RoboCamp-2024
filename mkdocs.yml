@@ -89,6 +89,11 @@ plugins:
         - robot/lekce8/project8
       debug: true
 
+  - auto-refresh-build-pages:
+      update_message: "Návod byl aktualizován, chcete načíst novou verzi?"
+      yes_button_text: "Ano"
+      no_button_text: "Ne"
+
 extra:
   social:
     - icon: fontawesome/brands/github

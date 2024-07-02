@@ -6,3 +6,4 @@ mkdocs-glightbox==0.4.0
 mkdocs-typedoc==1.0.4
 mkdocs-resize-images==1.0.1
 mkdocs-zip-folders==1.0.3
+mkdocs-auto-refresh-build-pages==1.0.2

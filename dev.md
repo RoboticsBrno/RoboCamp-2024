@@ -2,9 +2,9 @@
 
 ## Instalace nástrojů
 Budeme potřebovat:
-- git
-- python3 + pip3 (na Windows doporučuji z Win storu)
-- [nodejs](https://nodejs.org/en/download) + npm
+- `git`
+- `python3` + `pip` (na Windows doporučuji z Win storu)
+- [nodejs](https://nodejs.org/en/download) + `npm` (je součástí instalace)
 
 ## Repo
 Naklonujeme si repozitář:
@@ -18,7 +18,9 @@ git clone https://github.com/RoboticsBrno/RoboCamp-2024.git
 Otevři projekt a v terminálu spusť:
 
 ```bash
-pip3 install -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -r requirements.txt
 npm install
 ```
 
@@ -29,4 +31,7 @@ Lokální spuštění dokumentace:
 mkdocs serve
 ```
 
-
+případně:
+```
+python3 -m mkdocs serve
+```
