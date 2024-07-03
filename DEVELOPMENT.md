@@ -34,6 +34,9 @@ source .venv/bin/activate
 python3 -m mkdocs serve
 ```
 
+## Vychytávky
+Pro více rojetých dokumentací je možné použít `--dev-addr 127.0.0.1:8001` pro specifikaci adresy a portu.
+
 ## Práce s obrázky
 
 Obrázky přidávej do podsložek v `docs` podle adresy stránky, na které se mají zobrazit.
