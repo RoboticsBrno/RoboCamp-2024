@@ -1,4 +1,4 @@
-Táborové lekce: želvička 2024
+Táborové lekce: Robůtek 2024
 
 Technický blok:
 Instalace Jaculus a IDE (simulátor?)
