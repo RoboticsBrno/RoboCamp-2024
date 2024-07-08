@@ -6,6 +6,8 @@ glightbox: false
 
 ## Vítej na stránkách Robotického tábora 2024
 
+Tady je jen rozcestník na jednotlivé projekty.
+
 <!-- <div align="center">
     <div class="container">
         <div class="col--1">
