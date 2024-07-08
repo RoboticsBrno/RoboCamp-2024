@@ -4,57 +4,39 @@ glightbox: false
 
 # Robotický tábor
 
-## Vítej na stránkách Robotického tábora 2024
+Hlavním výrobkem letošního tábora je **Robůtek**
 
-Tady je jen rozcestník na jednotlivé projekty.
+![Robutek](assets/Robutek.jpg)
 
-<!-- <div align="center">
+Kdo si pamatuje Robotku, tak Robůtek je taková Robotka V2 - menší, jednodušší, přesnější ale pořád stejně rozšiřitelný 
+<br>
+
+Programuje se stejně jako minulý rok v TypeScriptu s pomocí Jacula ([jaculus.org](https//jaculus.org))
+<br>
+
+Ale toto není jediná novinka, přibyly nám i věci na pájení
+
+<div align="center">
     <div class="container">
         <div class="col--1">
-            <a href="roboSvit/">
-                <img src="roboSvit/assets/roboSvit-propag/photo/roboSvit-propag-04.png">
-                <h2>RoboSvit</h2>
+            <a href="https://gadgets.robotikabrno.cz/smdKostka">
+                <img src="https://gadgets.robotikabrno.cz/smdKostka/assets/default.png">
+                <h2>SMD kostka</h2>
             </a>
         </div>
         <div class="col--1">
-            <a href="solderingChallenge/">
-                <img src="solderingChallenge/assets/SMD_challenge_fancy.png">
-                <h2>Pájecí výzva</h2>
+            <a href="https://gadgets.robotikabrno.cz/simonSays">
+                <img src="https://gadgets.robotikabrno.cz/simonSays/assets/default.png">
+                <h2>Simon Says</h2>
             </a>
         </div>
         <div class="col--1">
-            <a href="electronicDie/">
-                <img src="electronicDie/assets/fancy/Electronic_dice-02.png">
-                <h2>Hrací kostka</h2>
+            <a href="https://gadgets.robotikabrno.cz/slusmetr">
+                <img src="https://gadgets.robotikabrno.cz/slusmetr/assets/default.png">
+                <h2>Šlusmetr</h2>
             </a>
         </div>
     </div>
+</div>
 
-    <div class="container">
-        <div class="col--1">
-            <a href="electron/">
-                <img src="electron/assets/electron-34.svg">
-                <h2>Electron</h2>
-            </a>
-        </div>
-        <div class="col--1">
-            <a href="elks/">
-                <img src="elks/assets/elks-model.png">
-                <h2>ELKS</h2>
-            </a>
-        </div>
-        <div class="col--1">
-            <a href="elksBox/">
-                <img src="elks/assets/elks-promo2.png">
-                <h2>ELKS krabička</h2>
-            </a>
-        </div>
-        <!--
-        <div class="col--1">
-            <a href="blackBox/">
-                <img src="blackBox/assets/blba_bedna.png">
-                <h2>BlackBox</h2>
-            </a>
-        </div>
-    </div>
-</div> -->
+Ale nebojte, všechny pájecí výrobky si můžete stále vyrobit
